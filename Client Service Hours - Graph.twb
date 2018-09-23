@@ -1,0 +1,2932 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0423.1548                               -->
+<workbook original-version='10.5' source-build='10.5.3 (10500.18.0423.1548)' source-platform='win' version='10.5' xml:base='https://qtableau.deloitte.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='ClientServiceHours-Graph' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource inline='true' name='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract' version='10.5'>
+      <repository-location id='AQD_CP3_HWP_Extract_ProductionMAT_ScrambledExtract' path='/datasources' revision='1.1' />
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled' name='dataengine.1thno581uwi2n218m6ny71xzjdod'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' db-format='dataengine' dbname='C:/Users/evovchar/Documents/My Tableau Repository/Datasources/10.5/Client Service Hours - Graph.twb Files/Data/Extracts/dataengine_1thno581uwi2n218m6ny7.tde' default-settings='yes' sslmode='' username='tableau_internal_user' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='dataengine.1thno581uwi2n218m6ny71xzjdod' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Client #</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Client #]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Client #</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>561</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Client Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Client Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>561</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Issuing Office per MAT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Issuing Office per MAT]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Issuing Office per MAT</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>61</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAT Engagement Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MAT Engagement Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MAT Engagement Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>588</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Public_Private</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Public_Private]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Public_Private</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CurrentYearWBS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CurrentYearWBS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CurrentYearWBS</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>855</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PriorYearWBS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PriorYearWBS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PriorYearWBS</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>800</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClientId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ClientId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ClientId</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>561</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IndustryId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[IndustryId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>IndustryId</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>7</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IndustryName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IndustryName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>IndustryName</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SectorId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[SectorId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SectorId</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>18</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SectorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SectorName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SectorName</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>18</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SubSectorId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[SubSectorId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SubSectorId</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SubSectorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SubSectorName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SubSectorName</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RegionId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[RegionId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>RegionId</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region Text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region Text]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Region Text</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRofile WBS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRofile WBS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PRofile WBS</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>855</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PricingId</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[PricingId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PricingId</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>855</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAT Profile ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MAT Profile ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MAT Profile ID</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>855</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Engagement Id]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Id</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1233</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Name</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1175</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAT Engagement ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MAT Engagement ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MAT Engagement ID</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1233</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EQCR PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EQCR PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EQCR PersonnelNumber</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EQCR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EQCR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EQCR</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EQCR Assistant PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EQCR Assistant PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EQCR Assistant PersonnelNumber</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>355</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EQCR Assistant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EQCR Assistant]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EQCR Assistant</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>356</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AEP PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AEP PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>AEP PersonnelNumber</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>554</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AEP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AEP]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>AEP</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>554</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Special Review Partner PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Special Review Partner PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Special Review Partner PersonnelNumber</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>17</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Special Review Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Special Review Partner]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Special Review Partner</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>17</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Senior Manager PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Senior Manager PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Senior Manager PersonnelNumber</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>596</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Senior Manager</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Senior Manager]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Senior Manager</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>599</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Audit Partner PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other Audit Partner PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Other Audit Partner PersonnelNumber</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>310</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Audit Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other Audit Partner]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Other Audit Partner</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>310</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Manager PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Manager PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Manager PersonnelNumber</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>583</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Manager</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Manager]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Manager</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>591</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Main Engagement Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Main Engagement Location]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Main Engagement Location</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>59</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement WBS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement WBS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement WBS</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>63</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deliverable Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Deliverable Date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Deliverable Date</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>706</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstReleaseDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[EstReleaseDate]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EstReleaseDate</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>511</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeliverableTypeName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeliverableTypeName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DeliverableTypeName</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deliverable OfficeId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[Deliverable OfficeId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Deliverable OfficeId</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>67</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deliverable Office</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Deliverable Office]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Deliverable Office</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>67</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deliverable RegionId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[Deliverable RegionId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Deliverable RegionId</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deliverable Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Deliverable Region]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Deliverable Region</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROI Archive Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ROI Archive Number]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ROI Archive Number</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2161</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IssuanceDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[IssuanceDate]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>IssuanceDate</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>512</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ServicePeriodEnd</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ServicePeriodEnd]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ServicePeriodEnd</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>120</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Signing Partner PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Signing Partner PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Signing Partner PersonnelNumber</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>522</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Signing Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Signing Partner]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Signing Partner</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>522</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROPOSAL_ID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[PROPOSAL_ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PROPOSAL_ID</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>855</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMONROLE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COMMONROLE_NAME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>COMMONROLE_NAME</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>7</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUNCTION_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FUNCTION_NAME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>FUNCTION_NAME</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>5</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CS_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CS_HOURS</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3007</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLIENTNUMBER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLIENTNUMBER]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CLIENTNUMBER</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>561</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLIENTNAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLIENTNAME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CLIENTNAME</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>561</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLIENT_FISCAL_YR_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLIENT_FISCAL_YR_END]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CLIENT_FISCAL_YR_END</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>20</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PP_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PP_NAME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PP_NAME</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>424</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PM_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PM_NAME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PM_NAME</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>557</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_AUDIT_YEAR</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[CURRENT_AUDIT_YEAR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CURRENT_AUDIT_YEAR</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DELOITTE_FISCAL_YEAR</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[DELOITTE_FISCAL_YEAR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DELOITTE_FISCAL_YEAR</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>APPROVED_ON</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[APPROVED_ON]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>APPROVED_ON</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>393</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CALENDARID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[CALENDARID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CALENDARID</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>393</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CALENDARDATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[CALENDARDATE]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CALENDARDATE</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>393</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CALENDARDATESTRING</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CALENDARDATESTRING]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CALENDARDATESTRING</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>393</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CALENDARYEAR</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[CALENDARYEAR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CALENDARYEAR</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CALENDARMONTH</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[CALENDARMONTH]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CALENDARMONTH</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>12</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CALENDARDAYOFMONTH</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[CALENDARDAYOFMONTH]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CALENDARDAYOFMONTH</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>31</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CALENDARDAYOFWEEK</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[CALENDARDAYOFWEEK]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CALENDARDAYOFWEEK</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>7</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CALENDARDAYOFYEAR</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[CALENDARDAYOFYEAR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CALENDARDAYOFYEAR</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>276</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CALENDARWEEKOFYEAR</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[CALENDARWEEKOFYEAR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CALENDARWEEKOFYEAR</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>53</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Right_FISCALYEAR</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[Right_FISCALYEAR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Right_FISCALYEAR</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACCOUNTINGPERIOD</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[ACCOUNTINGPERIOD]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ACCOUNTINGPERIOD</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAYROLLPERIOD</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[PAYROLLPERIOD]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PAYROLLPERIOD</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>26</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIWEEKLYPERIOD</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[BIWEEKLYPERIOD]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>BIWEEKLYPERIOD</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>26</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISUSHOLIDAY</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[ISUSHOLIDAY]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ISUSHOLIDAY</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WEEKENDDATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[WEEKENDDATE]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>WEEKENDDATE</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>121</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIWEEKPERIODENDDATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[BIWEEKPERIODENDDATE]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>BIWEEKPERIODENDDATE</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>67</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERIODENDDATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[PERIODENDDATE]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PERIODENDDATE</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>35</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WEEKOFACCOUNTINGPERIOD</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[WEEKOFACCOUNTINGPERIOD]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>WEEKOFACCOUNTINGPERIOD</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>5</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISCALQUARTER</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[FISCALQUARTER]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>FISCALQUARTER</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISCALWEEK</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[FISCALWEEK]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>FISCALWEEK</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>53</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISCALYEARPERIOD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FISCALYEARPERIOD]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>FISCALYEARPERIOD</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>35</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Partner Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Partner Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Partner Name</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>424</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Manager Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Manager Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Manager Name</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>557</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[CS_HOURS]' role='measure' type='quantitative' />
+      <column caption='Job Level' datatype='string' name='[Calculation_816840425646137344]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [COMMONROLE_NAME] &#13;&#10;WHEN &apos;Partner&apos;  then &apos;PPMD&apos;&#13;&#10;WHEN &apos;Director&apos; then &apos;PPMD&apos;&#13;&#10;WHEN &apos;Manager&apos; then &apos;SM/M&apos;&#13;&#10;WHEN &apos;Sr Manager&apos; then &apos;SM/M&apos;&#13;&#10;WHEN &apos;Sr Staff&apos; then &apos;Senior&apos;&#13;&#10;WHEN &apos;Staff&apos; then &apos;Staff&apos;&#13;&#10;WHEN &apos;Jr Staff&apos; then &apos;Staff&apos;&#13;&#10;&#13;&#10;END' />
+      </column>
+      <column caption='Office Comparison' datatype='real' name='[Calculation_816840425991839745]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Engagement Name]:sum({fixed [Issuing Office per MAT]:sum([CS_HOURS])})}&#13;&#10;/&#13;&#10;{fixed [Engagement Name]:sum([CS_HOURS])}' />
+      </column>
+      <column caption='Region comparison' datatype='real' name='[Calculation_816840425992040450]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Engagement Name]:sum({fixed [Region Text]:SUM([CS_HOURS])})}&#13;&#10;/&#13;&#10;{FIXED [Engagement Name]:SUM([CS_HOURS])}' />
+      </column>
+      <column caption='CY Planned hours' datatype='real' name='[Calculation_816840426002636803]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF  [Right_FISCALYEAR]&gt; YEAR(TODAY()) THEN [CS_HOURS]  END)' />
+      </column>
+      <column caption='%Total hours' datatype='real' name='[Calculation_816840426289647623]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([CS_HOURS]) / Total(SUM([CS_HOURS]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[CS_HOURS]' derivation='Sum' name='[sum:CS_HOURS:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_816840425991839745]' derivation='Sum' name='[sum:Calculation_816840425991839745:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_816840425992040450]' derivation='Sum' name='[sum:Calculation_816840425992040450:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_816840426002636803]' derivation='Sum' name='[sum:Calculation_816840426002636803:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_816840426002636803]' derivation='User' name='[usr:Calculation_816840426002636803:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.529639' measure-ordering='alphabetic' measure-percentage='0.470361' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#00bdbd'>
+              <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425992040450:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425991839745:qk]&quot;</bucket>
+            </map>
+            <map to='#aaff7f'>
+              <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[usr:Calculation_816840426002636803:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840426002636803:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:CS_HOURS:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource inline='true' name='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract_Hierarchy' version='10.5'>
+      <repository-location id='AQD_CP3_HWP_Extract_ProductionMAT_ScrambledExtract' path='/datasources' revision='1.0' />
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled' name='dataengine.1w8j90s0t0m3ln11zy6ie114x799'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' db-format='dataengine' dbname='C:/Users/evovchar/Documents/My Tableau Repository/Datasources/10.5/Client Service Hours - Graph.twb Files/Data/Extracts 1/dataengine_1w8j90s0t0m3ln11zy6ie.tde' default-settings='yes' sslmode='' username='tableau_internal_user' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='dataengine.1w8j90s0t0m3ln11zy6ie114x799' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Client #</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Client #]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Client #</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>314</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Client Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Client Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>314</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Issuing Office per MAT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Issuing Office per MAT]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Issuing Office per MAT</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>55</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAT Engagement Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MAT Engagement Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MAT Engagement Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>329</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Public_Private</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Public_Private]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Public_Private</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CurrentYearWBS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CurrentYearWBS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CurrentYearWBS</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>395</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PriorYearWBS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PriorYearWBS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PriorYearWBS</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>377</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClientId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ClientId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ClientId</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>314</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IndustryId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[IndustryId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>IndustryId</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>7</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IndustryName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IndustryName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>IndustryName</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SectorId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[SectorId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SectorId</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>18</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SectorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SectorName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SectorName</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>18</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SubSectorId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[SubSectorId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SubSectorId</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SubSectorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SubSectorName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SubSectorName</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RegionId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[RegionId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>RegionId</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region Text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region Text]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Region Text</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRofile WBS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRofile WBS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PRofile WBS</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>395</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PricingId</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[PricingId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PricingId</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>395</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAT Profile ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MAT Profile ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MAT Profile ID</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>395</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Engagement Id]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Id</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>593</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Name</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>579</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAT Engagement ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MAT Engagement ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MAT Engagement ID</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>593</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EQCR PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EQCR PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EQCR PersonnelNumber</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EQCR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EQCR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EQCR</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EQCR Assistant PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EQCR Assistant PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EQCR Assistant PersonnelNumber</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>212</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EQCR Assistant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EQCR Assistant]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EQCR Assistant</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>213</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AEP PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AEP PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>AEP PersonnelNumber</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>382</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AEP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AEP]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>AEP</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>382</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Special Review Partner PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Special Review Partner PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Special Review Partner PersonnelNumber</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>9</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Special Review Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Special Review Partner]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Special Review Partner</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>9</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Senior Manager PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Senior Manager PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Senior Manager PersonnelNumber</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>354</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Senior Manager</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Senior Manager]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Senior Manager</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>354</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Audit Partner PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other Audit Partner PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Other Audit Partner PersonnelNumber</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>217</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Audit Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other Audit Partner]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Other Audit Partner</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>217</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Manager PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Manager PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Manager PersonnelNumber</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>331</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement Manager</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement Manager]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement Manager</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>335</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Main Engagement Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Main Engagement Location]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Main Engagement Location</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>57</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement WBS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement WBS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Engagement WBS</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>31</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deliverable Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Deliverable Date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Deliverable Date</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>584</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstReleaseDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[EstReleaseDate]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EstReleaseDate</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>409</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeliverableTypeName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeliverableTypeName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DeliverableTypeName</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deliverable OfficeId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[Deliverable OfficeId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Deliverable OfficeId</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>60</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deliverable Office</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Deliverable Office]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Deliverable Office</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>60</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deliverable RegionId</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[Deliverable RegionId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Deliverable RegionId</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deliverable Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Deliverable Region]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Deliverable Region</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROI Archive Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ROI Archive Number]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ROI Archive Number</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1211</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IssuanceDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[IssuanceDate]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>IssuanceDate</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>409</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ServicePeriodEnd</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ServicePeriodEnd]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ServicePeriodEnd</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>90</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Signing Partner PersonnelNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Signing Partner PersonnelNumber]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Signing Partner PersonnelNumber</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>364</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Signing Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Signing Partner]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Signing Partner</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>364</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_AUDIT_YEAR</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[CURRENT_AUDIT_YEAR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CURRENT_AUDIT_YEAR</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLIENT_FISCAL_YR_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLIENT_FISCAL_YR_END]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CLIENT_FISCAL_YR_END</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>16</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLIENT_TYPE_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLIENT_TYPE_DESC]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CLIENT_TYPE_DESC</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRIOR_WBS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRIOR_WBS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PRIOR_WBS</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>380</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRIOR_WBS_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRIOR_WBS_DESC]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PRIOR_WBS_DESC</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>376</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_WBS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CURRENT_WBS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CURRENT_WBS</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>395</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICING_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRICING_NAME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PRICING_NAME</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>395</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENGMT_PARTNER_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ENGMT_PARTNER_NAME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ENGMT_PARTNER_NAME</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>280</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENGMT_MANAGER_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ENGMT_MANAGER_NAME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ENGMT_MANAGER_NAME</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>306</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Right_FISCALYEAR</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[Right_FISCALYEAR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Right_FISCALYEAR</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLIENT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLIENT]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CLIENT</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>314</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROPOSAL_ID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[PROPOSAL_ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PROPOSAL_ID</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>395</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PARTNER_US_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PARTNER_US_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PARTNER_US_HOURS</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>350</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PARTNER_USI_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PARTNER_USI_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PARTNER_USI_HOURS</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DIRECTOR_US_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DIRECTOR_US_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DIRECTOR_US_HOURS</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>270</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DIRECTOR_USI_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DIRECTOR_USI_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DIRECTOR_USI_HOURS</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>9</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR_MANAGER_US_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SR_MANAGER_US_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SR_MANAGER_US_HOURS</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>358</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR_MANAGER_USI_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SR_MANAGER_USI_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SR_MANAGER_USI_HOURS</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>89</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MANAGER_US_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MANAGER_US_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MANAGER_US_HOURS</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>373</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MANAGER_USI_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MANAGER_USI_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MANAGER_USI_HOURS</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>228</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR_STAFF_US_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SR_STAFF_US_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SR_STAFF_US_HOURS</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>380</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR_STAFF_USI_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SR_STAFF_USI_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SR_STAFF_USI_HOURS</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>304</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STAFF_US_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STAFF_US_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>STAFF_US_HOURS</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>374</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STAFF_USI_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STAFF_USI_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>STAFF_USI_HOURS</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>303</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JR_STAFF_US_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[JR_STAFF_US_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>JR_STAFF_US_HOURS</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>367</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JR_STAFF_USI_HOURS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[JR_STAFF_USI_HOURS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>JR_STAFF_USI_HOURS</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>176</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total US Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total US Hours]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Total US Hours</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>390</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total USI Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total USI Hours]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Total USI Hours</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>362</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total US PPMD Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total US PPMD Hours]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Total US PPMD Hours</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>373</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total US SM/M Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total US SM/M Hours]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Total US SM/M Hours</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>386</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total USI PPMD Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total USI PPMD Hours]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Total USI PPMD Hours</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>9</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total USI SM/M Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total USI SM/M Hours]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Total USI SM/M Hours</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>243</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>US PPMD %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[US PPMD %]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>US PPMD %</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>395</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>US SM/M %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[US SM/M %]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>US SM/M %</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>395</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>USI PPMD %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[USI PPMD %]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>USI PPMD %</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>10</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>USI SM/M %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[USI SM/M %]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>USI SM/M %</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>347</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total US Staff Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total US Staff Hours]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Total US Staff Hours</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>388</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total USI Staff Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total USI Staff Hours]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Total USI Staff Hours</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>351</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>US Staff %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[US Staff %]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>US Staff %</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>395</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>USI Staff %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[USI Staff %]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>USI Staff %</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>385</approx-count>
+            <contains-null>false</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.556492' measure-ordering='alphabetic' measure-percentage='0.443508' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Client service hours'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract' />
+          </datasources>
+          <datasource-dependencies datasource='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract'>
+            <column datatype='string' name='[COMMONROLE_NAME]' role='dimension' type='nominal' />
+            <column datatype='real' name='[CS_HOURS]' role='measure' type='quantitative' />
+            <column caption='Job Level' datatype='string' name='[Calculation_816840425646137344]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [COMMONROLE_NAME] &#13;&#10;WHEN &apos;Partner&apos;  then &apos;PPMD&apos;&#13;&#10;WHEN &apos;Director&apos; then &apos;PPMD&apos;&#13;&#10;WHEN &apos;Manager&apos; then &apos;SM/M&apos;&#13;&#10;WHEN &apos;Sr Manager&apos; then &apos;SM/M&apos;&#13;&#10;WHEN &apos;Sr Staff&apos; then &apos;Senior&apos;&#13;&#10;WHEN &apos;Staff&apos; then &apos;Staff&apos;&#13;&#10;WHEN &apos;Jr Staff&apos; then &apos;Staff&apos;&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Office Comparison' datatype='real' name='[Calculation_816840425991839745]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [Engagement Name]:sum({fixed [Issuing Office per MAT]:sum([CS_HOURS])})}&#13;&#10;/&#13;&#10;{fixed [Engagement Name]:sum([CS_HOURS])}' />
+            </column>
+            <column caption='Region comparison' datatype='real' name='[Calculation_816840425992040450]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [Engagement Name]:sum({fixed [Region Text]:SUM([CS_HOURS])})}&#13;&#10;/&#13;&#10;{FIXED [Engagement Name]:SUM([CS_HOURS])}' />
+            </column>
+            <column caption='CY Planned hours' datatype='real' name='[Calculation_816840426002636803]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF  [Right_FISCALYEAR]&gt; YEAR(TODAY()) THEN [CS_HOURS]  END)' />
+            </column>
+            <column datatype='string' name='[Engagement Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Issuing Office per MAT]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region Text]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Right_FISCALYEAR]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_816840425646137344]' derivation='None' name='[none:Calculation_816840425646137344:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_816840425991839745]' derivation='Sum' name='[sum:Calculation_816840425991839745:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_816840425992040450]' derivation='Sum' name='[sum:Calculation_816840425992040450:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_816840426002636803]' derivation='User' name='[usr:Calculation_816840426002636803:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[usr:Calculation_816840426002636803:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425992040450:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425991839745:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[usr:Calculation_816840426002636803:qk]&quot;</bucket>
+              <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425992040450:qk]&quot;</bucket>
+              <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425991839745:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <sort class='manual' column='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[none:Calculation_816840425646137344:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;PPMD&quot;</bucket>
+              <bucket>&quot;SM/M&quot;</bucket>
+              <bucket>&quot;Senior&quot;</bucket>
+              <bucket>&quot;Staff&quot;</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[Multiple Values]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]' value='false' />
+            <format attr='text-orientation' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]' value='0' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-style' scope='cols' value='dashed' />
+            <format attr='border-color' scope='cols' value='#e6e6e6' />
+            <format attr='border-width' scope='cols' value='2' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]' value='150' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.91154694557189941' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[Multiple Values]</rows>
+        <cols>([AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[none:Calculation_816840425646137344:nk] / [AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Engagement Leverage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract' />
+          </datasources>
+          <datasource-dependencies datasource='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract'>
+            <column datatype='string' name='[COMMONROLE_NAME]' role='dimension' type='nominal' />
+            <column datatype='real' name='[CS_HOURS]' role='measure' type='quantitative' />
+            <column caption='%Total hours' datatype='real' name='[Calculation_816840426289647623]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([CS_HOURS]) / Total(SUM([CS_HOURS]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[COMMONROLE_NAME]' derivation='None' name='[none:COMMONROLE_NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_816840426289647623]' derivation='User' name='[usr:Calculation_816840426289647623:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[usr:Calculation_816840426289647623:qk]' value='44' />
+            <format attr='display' class='0' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[usr:Calculation_816840426289647623:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='333' />
+            <format attr='color' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[usr:Calculation_816840426289647623:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[usr:Calculation_816840426289647623:qk]' value='bold' />
+            <format attr='text-format' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[usr:Calculation_816840426289647623:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[none:COMMONROLE_NAME:nk]' value='90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[none:COMMONROLE_NAME:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[usr:Calculation_816840426289647623:qk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='CS Hours'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='59250' id='1' type='empty' w='98400' x='800' y='39750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32666' id='3' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='253' h='32625' id='4' is-fixed='true' name='Client service hours' w='98400' x='800' y='1000'>
+                  <layout-cache minheight='165' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='6084' id='8' name='Client service hours' pane-specification-id='0' param='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]' type='color' w='98400' x='800' y='33666'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='EL'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='53700' x='25000' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='53700' x='25000' y='1000'>
+              <zone h='30125' id='1' type='empty' w='53700' x='25000' y='68875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='56250' id='3' param='vert' type='layout-flow' w='53700' x='25000' y='1000'>
+                <zone h='56250' id='4' name='Engagement Leverage' w='53700' x='25000' y='1000'>
+                  <layout-cache minheight='143' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='7625' id='8' name='Engagement Leverage' pane-specification-id='0' param='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[none:COMMONROLE_NAME:nk]' show-title='false' type='color' w='53700' x='25000' y='61250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='4000' id='9' type='text' w='53700' x='25000' y='57250'>
+                <formatted-text>
+                  <run>                                                  %Total hours</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='98000' id='10' param='horz' type='layout-flow' w='24200' x='800' y='1000' />
+          <zone h='98000' id='11' param='horz' type='layout-flow' w='20500' x='78700' y='1000' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='48'>
+    <window class='worksheet' name='Client service hours'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]</field>
+            <field>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[none:COMMONROLE_NAME:nk]</field>
+            <field>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:CS_HOURS:ok]</field>
+            <field>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425991839745:ok]</field>
+            <field>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425992040450:ok]</field>
+            <field>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract_Hierarchy].[none:Region Text:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' name='CS Hours'>
+      <viewpoints>
+        <viewpoint name='Client service hours'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='worksheet' name='Engagement Leverage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[none:COMMONROLE_NAME:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[none:COMMONROLE_NAME:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' maximized='true' name='EL'>
+      <viewpoints>
+        <viewpoint name='Engagement Leverage' />
+      </viewpoints>
+      <active id='-1' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='CS Hours' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Client service hours' width='192'>
+      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
+      SGr/AVNDwD0ftRd5AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='EL' width='192'>
+      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
+      yRV4AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Engagement Leverage' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
