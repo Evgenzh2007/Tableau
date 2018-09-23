@@ -1,17 +1,14 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20182.18.0627.2230                               -->
-<workbook original-version='10.5' source-build='2018.2.0 (20182.18.0627.2230)' source-platform='win' version='18.1' xml:base='https://qtableau.deloitte.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
-  <document-format-change-manifest>
-    <SortTagCleanup />
-  </document-format-change-manifest>
+<workbook original-version='10.5' source-build='2018.2.0 (20182.18.0627.2230)' source-platform='win' version='10.5' xml:base='https://qtableau.deloitte.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <repository-location id='ClientServiceHours-Graph' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource inline='true' name='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract_Hierarchy' version='18.1'>
+    <datasource inline='true' name='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract_Hierarchy' version='10.5'>
       <repository-location id='AQD_CP3_HWP_Extract_ProductionMAT_ScrambledExtract' path='/datasources' revision='1.0' />
       <connection class='federated'>
         <named-connections>
@@ -1157,7 +1154,7 @@
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
     </datasource>
-    <datasource inline='true' name='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract' version='18.1'>
+    <datasource inline='true' name='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract' version='10.5'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='AQD_CP3_HWP_Extract_ProductionMAT_Scrambled' name='dataengine.1thno581uwi2n218m6ny71xzjdod'>
@@ -3491,21 +3488,21 @@
               <groupfilter function='member' level='[:Measure Names]' member='&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425991839745:qk]&quot;' />
             </groupfilter>
           </filter>
-          <manual-sort column='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]' direction='ASC'>
+          <sort class='manual' column='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]' direction='ASC'>
             <dictionary>
               <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[usr:Calculation_816840426002636803:qk]&quot;</bucket>
               <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425992040450:qk]&quot;</bucket>
               <bucket>&quot;[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[sum:Calculation_816840425991839745:qk]&quot;</bucket>
             </dictionary>
-          </manual-sort>
-          <manual-sort column='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[none:Calculation_816840425646137344:nk]' direction='ASC'>
+          </sort>
+          <sort class='manual' column='[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[none:Calculation_816840425646137344:nk]' direction='ASC'>
             <dictionary>
               <bucket>&quot;PPMD&quot;</bucket>
               <bucket>&quot;SM/M&quot;</bucket>
               <bucket>&quot;Senior&quot;</bucket>
               <bucket>&quot;Staff&quot;</bucket>
             </dictionary>
-          </manual-sort>
+          </sort>
           <slices>
             <column>[AQD_CP3_HWP_Extract_ProductionMAT_Scrambled Extract].[:Measure Names]</column>
           </slices>
